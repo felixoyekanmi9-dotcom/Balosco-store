@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>BALOSCO 🛒</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Cart</a>
+  </nav>
+</header>
+
+<section class="product-details">
+  <img id="productImg">
+
+  <div class="info">
+    <h2 id="productName"></h2>
+    <p id="productPrice"></p>
+    <p id="productDesc"></p>
+    <p id="productRating"></p>
+    <p id="productBuyers"></p>
+
+    <div class="qty">
+      <button onclick="decrease()">-</button>
+      <span id="count">1</span>
+      <button onclick="increase()">+</button>
+    </div>
+
+    <button onclick="buyProduct()">Buy Now</button>
+  </div>
+</section>
+
+<script src="product.js"></script>
+</body>
+</html>
